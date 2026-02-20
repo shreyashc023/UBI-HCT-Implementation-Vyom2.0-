@@ -27,7 +27,6 @@ Each banking capability (Login & Registration, Profile, Account Enquiry, etc.) i
 
 The backend integrates distributed and relational databases:
 - Cassandra for high-volume transactional workloads
-- PostgreSQL for structured relational data
 
 Security is enforced using Spring Security with JWT-based authentication and AES encryption for sensitive information.
 
@@ -59,7 +58,6 @@ flowchart TD
     B --> E[Profile Service]
     B --> F[Current Account Enquiry Service]
     D --> G[Cassandra DB]
-    E --> H[PostgreSQL DB]
     F --> G
     C --> I[JWT Token Generation]
 ```
@@ -77,7 +75,6 @@ flowchart TD
 
 ## Database
 - Apache Cassandra
-- PostgreSQL
 
 ## Security
 - Spring Security
